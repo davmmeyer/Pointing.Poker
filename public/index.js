@@ -260,6 +260,7 @@ var PointingPoker = function () {
             document.getElementById("linkMenu").style.display = "none";
             document.getElementById("linkStoryPointing").style.display = "none";
             document.getElementById("linkVelocityPointing").style.display = "none";
+            document.getElementById("linkCardTap").style.display = "none";
             //document.getElementById("pointPickerContainer").style.display = "none";
             //document.getElementById("resultsContainer").style.display = "none";
             document.getElementById("memberContainer").style.display = "none";
@@ -273,6 +274,7 @@ var PointingPoker = function () {
             document.getElementById("linkMenu").style.display = "";
             //document.getElementById("linkStoryPointing").style.display = "";
             //document.getElementById("linkVelocityPointing").style.display = "";
+            //document.getElementById("linkCardTap").style.display = "none";
             document.getElementById("resultsContainer").style.display = "block";
             document.getElementById("memberContainer").style.display = "block";
             document.getElementById("roomEntryContainer").style.display = "none";
@@ -307,18 +309,21 @@ var PointingPoker = function () {
                 case "task":
                     document.getElementById("linkStoryPointing").className = "active";
                     document.getElementById("linkVelocityPointing").className = "";
+                    document.getElementById("linkCardTap").className = "";
                     document.getElementById("gameContainer-task").style.display = "block";
                     document.getElementById("gameContainer-velocity").style.display = "none";
                     break;
                 case "velocity":
                     document.getElementById("linkStoryPointing").className = "";
                     document.getElementById("linkVelocityPointing").className = "active";
+                    document.getElementById("linkCardTap").className = "";
                     document.getElementById("gameContainer-task").style.display = "none";
                     document.getElementById("gameContainer-velocity").style.display = "block";
                     break;
                 case "cardtap":
                     document.getElementById("linkStoryPointing").className = "";
                     document.getElementById("linkVelocityPointing").className = "";
+                    document.getElementById("linkCardTap").className = "active";
                     document.getElementById("gameContainer-task").className = none;
                     document.getElementById("gameContainer-velocity").className = none;
             }
