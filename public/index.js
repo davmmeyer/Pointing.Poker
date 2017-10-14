@@ -2,7 +2,6 @@
 var PointingPoker = function () {
 
     var _clientKey, _memberId, _roomKey,
-    _gaID = 'UA-53681854-2';
 
     var socket = io();
 
@@ -317,6 +316,11 @@ var PointingPoker = function () {
                     document.getElementById("gameContainer-task").style.display = "none";
                     document.getElementById("gameContainer-velocity").style.display = "block";
                     break;
+                case "cardtap":
+                    document.getElementById("linkStoryPointing").className = "";
+                    document.getElementById("linkVelocityPointing").className = "";
+                    document.getElementById("gameContainer-task").className = none;
+                    document.getElementById("gameContainer-velocity").className = none;
             }
         },
 
