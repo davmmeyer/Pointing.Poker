@@ -1,7 +1,7 @@
 
 var PointingPoker = function () {
 
-    var _clientKey, _memberId, _roomKey,
+    var _clientKey, _memberId, _roomKey;
 
     var socket = io();
 
